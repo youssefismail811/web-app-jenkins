@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+        nodejs 'NodeJs'
+    }
     environment {
         SONAR_PROJECT_KEY = 'devops'
         SONAR_SCANNER_HOME = 'sonarqubescanner'
